@@ -140,6 +140,7 @@
 // };
 
 
+// src/context/AuthContext.jsx - Updated for Production
 import { createContext, useContext, useReducer, useEffect } from 'react';
 import axios from 'axios';
 import toast from 'react-hot-toast';
@@ -168,7 +169,8 @@ export const AuthProvider = ({ children }) => {
     loading: true
   });
 
-  const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
+  // Production API URL - Replace with your actual OnRender backend URL
+  const API_URL = 'https://movie-ticket-rxxa.onrender.com/api';
 
   // Configure axios defaults
   useEffect(() => {
