@@ -1,0 +1,212 @@
+# Backend .gitignore
+
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+.env.staging
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+database.db
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+
+# nyc test coverage
+.nyc_output/
+
+# Dependency directories
+jspm_packages/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# Temporary folders
+tmp/
+temp/
+uploads/temp/
+
+# Build outputs
+dist/
+build/
+
+# Editor directories and files
+.vscode/
+.idea/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Windows
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# Node.js specific
+.node_repl_history
+
+# Express.js specific
+sessions/
+
+# MongoDB
+mongod.lock
+
+# Redis
+dump.rdb
+
+# JWT keys
+*.pem
+*.key
+private-key.txt
+public-key.txt
+
+# SSL certificates
+*.crt
+*.cer
+*.p12
+*.pfx
+
+# Configuration files with sensitive data
+config/production.json
+config/staging.json
+config/local.json
+
+# Upload directories
+uploads/
+public/uploads/
+static/uploads/
+
+# Cache
+.cache/
+*.cache
+
+# Testing
+coverage/
+.jest/
+
+# Documentation build
+docs/build/
+
+# Package managers
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# PM2
+.pm2/
+ecosystem.config.js
+
+# Docker
+Dockerfile.prod
+docker-compose.prod.yml
+.dockerignore
+
+# Kubernetes
+k8s/
+
+# Terraform
+*.tfstate
+*.tfstate.backup
+.terraform/
+
+# AWS
+.aws/
+
+# Google Cloud
+.gcloud/
+
+# Azure
+.azure/
+
+# Monitoring and profiling
+newrelic_agent.log
+*.heapsnapshot
+
+# Backup files
+*.backup
+*.bak
+*.old
+
+# Email templates (if sensitive)
+/templates/email/production/
+
+# API documentation
+/docs/api/build/
+
+# Swagger generated files
+swagger.json
+swagger.yaml
+
+# Redis dump
+dump.rdb
+
+# Session store
+sessions/
+
+# File uploads
+uploads/
+files/
+attachments/
+
+# Generated files
+generated/
+
+# Build artifacts
+*.tar.gz
+*.zip
+
+# Local development
+local/
+dev/
